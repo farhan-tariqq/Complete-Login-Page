@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+</head>
+<body>
+    <style>
+        /* nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+            z-index: 9;
+            background: transparent !important;
+        } */
+
+        /* .container-fluid.h-100 {
+            margin-top: -150px;
+        } */
+    </style>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="z-index: 11;background: transparent !important; padding-top: 50px;padding-left:120px;">
+        <a class="navbar-brand" href="#"> <img src="img/logo.png" alt="logo" width="120px" height="" style="margin-left:-30px; margin-bottom:15px"></a>
+    </nav>
+    <div class="container-fluid h-100" style="margin-top: -140px;">
+        <div class="row" style="padding-left:90px;">
+            <div class="col-md-6 p-0" style="background-image: url('https://img.freepik.com/free-photo/company-managers-with-protective-face-masks-talking-while-walking-through-wood-factory-facility_637285-11879.jpg?w=1060&t=st=1681454760~exp=1681455360~hmac=b040f36b45ad9031ce756d2c4c60972204a1596923327410ba1a3fa242e4a26a'); background-size: cover; height: 72.5vh; border-radius:30px;"></div>
+             <div class="col-md-6 d-flex <!--justify-content-center--> align-items-center">
+                <div class="card transparent-form" style="border-radius: 30px; padding: 20px; width: 80%;margin-right:x;">
+                    <div class="card-body">
+                        <div class="text-center mb-4">
+                            <h2 class="text-primary" style="font-size: 1.5rem;">Sales Management System</h2>
+                        </div>
+                        <form method="post" asp-action="Login">
+                            <div class="form-group">
+                                <label asp-for="User_Name" class="text-primary">User Name</label>
+                                <input type="text" style="border-radius:20px; width: 100%;" asp-for="User_Name" placeholder="User Name" class="form-control" autocomplete="off" />
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Password" class="text-primary">Password</label>
+                                <input type="password" style="border-radius:20px; width: 100%;" asp-for="Password" placeholder="Password" class="form-control" autocomplete="off" />
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" checked>
+                                        <label class="form-check-label" for="check1">Remember me</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <a href="#">Forgot Password?</a>
+                                </div>
+                            </div>
+                            <div class="form-group" style="text-align:center; border-radius:8px;">
+                                <button type="submit" class="btn btn-primary w-50 mt-3">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>
